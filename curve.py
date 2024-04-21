@@ -1,7 +1,7 @@
 import rhinoscriptsyntax as rs
 
 
-def CreatePointOffsetFromLineCenter(line_id, distance=0.7, direction="down"):
+def create_point_offset_from_line_centre(line_id, distance=0.7, direction="down"):
   
   """
   Creates a point at a specified distance from the center of a given line, in either the 
@@ -64,8 +64,8 @@ def create_first_pattern(pt_dict, i, j):
         rs.HideObject(line_C)
 
 
-        pt_A = CreatePointOffsetFromLineCenter(line_A)
-        pt_C = CreatePointOffsetFromLineCenter(line_C)
+        pt_A = create_point_offset_from_line_centre(line_A)
+        pt_C = create_point_offset_from_line_centre(line_C)
         
         line_B_centre = rs.CurveMidPoint(line_B)
         line_D_centre = rs.CurveMidPoint(line_D)
@@ -118,8 +118,8 @@ def create_second_pattern(pt_dict, i, j):
                 rs.HideObject(line_C)
 
 
-                pt_A = CreatePointOffsetFromLineCenter(line_A, direction="up")
-                pt_C = CreatePointOffsetFromLineCenter(line_C, direction="up")
+                pt_A = create_point_offset_from_line_centre(line_A, direction="up")
+                pt_C = create_point_offset_from_line_centre(line_C, direction="up")
                 
                 line_B_centre = rs.CurveMidPoint(line_B)
                 line_D_centre = rs.CurveMidPoint(line_D)
