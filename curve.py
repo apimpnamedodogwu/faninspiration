@@ -149,8 +149,8 @@ def create_second_pattern(pt_dict, i, j):
 
 def create_matrix():
     pt_dict = {}
-    for i in range(5):
-        for j in range(9):
+    for i in range(10):
+        for j in range(11):
             x = i 
             y = j 
             z = 0
